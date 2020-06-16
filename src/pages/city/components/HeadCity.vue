@@ -1,0 +1,40 @@
+
+<template>
+   <div  class="header">城市选择
+      <router-link to="/">
+      <div class="iconfont header-back">&#xe624;</div>
+      </router-link>
+   </div>
+</template>
+
+<script>
+
+/**
+ * 1.路由跳转处理 router-link to 后面接需要跳转的的路径
+ */
+export default {
+   name:"CityHead"
+}
+</script>
+
+<style lang="stylus" scoped>
+@import  '~styles/varibles.styl';
+.header
+   position relative
+   overflow hidden
+   height $headerHeight
+   line-height  $headerHeight
+   background $bgColor
+   text-align center
+   color #fff
+   .header-back
+      top 0
+      left 0
+      position absolute
+      width .64rem
+      text-align: center
+      font-size: .4rem
+      text-align center
+      color #fff
+
+</style>
